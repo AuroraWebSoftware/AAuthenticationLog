@@ -1,6 +1,6 @@
 <?php
 
-namespace Rappasoft\LaravelAuthenticationLog\Notifications;
+namespace AuroraWebSoftware\LaravelAuthenticationLog\Notifications;
 
 use Illuminate\Bus\Queueable;
 use Illuminate\Contracts\Queue\ShouldQueue;
@@ -8,7 +8,7 @@ use Illuminate\Notifications\Messages\MailMessage;
 use Illuminate\Notifications\Messages\NexmoMessage;
 use Illuminate\Notifications\Messages\SlackMessage;
 use Illuminate\Notifications\Notification;
-use Rappasoft\LaravelAuthenticationLog\Models\AuthenticationLog;
+use AuroraWebSoftware\LaravelAuthenticationLog\Models\AuthenticationLog;
 
 class FailedLogin extends Notification implements ShouldQueue
 {

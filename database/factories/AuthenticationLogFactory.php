@@ -1,9 +1,9 @@
 <?php
 
-namespace Rappasoft\LaravelAuthenticationLog\Database\Factories;
+namespace AuroraWebSoftware\LaravelAuthenticationLog\Database\Factories;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
-use Rappasoft\LaravelAuthenticationLog\Models\AuthenticationLog;
+use AuroraWebSoftware\LaravelAuthenticationLog\Models\AuthenticationLog;
 
 class AuthenticationLogFactory extends Factory
 {

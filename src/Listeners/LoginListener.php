@@ -1,12 +1,12 @@
 <?php
 
-namespace Rappasoft\LaravelAuthenticationLog\Listeners;
+namespace AuroraWebSoftware\LaravelAuthenticationLog\Listeners;
 
 use Illuminate\Auth\Events\Login;
 use Illuminate\Http\Request;
 use Illuminate\Support\Carbon;
-use Rappasoft\LaravelAuthenticationLog\Notifications\NewDevice;
-use Rappasoft\LaravelAuthenticationLog\Traits\AuthenticationLoggable;
+use AuroraWebSoftware\LaravelAuthenticationLog\Notifications\NewDevice;
+use AuroraWebSoftware\LaravelAuthenticationLog\Traits\AuthenticationLoggable;
 
 class LoginListener
 {

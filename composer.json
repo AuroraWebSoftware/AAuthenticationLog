@@ -6,7 +6,7 @@
         "laravel",
         "laravel-authentication-log"
     ],
-    "homepage": "https://github.com/rappasoft/laravel-authentication-log",
+    "homepage": "https://github.com/aurorawebsoftware/laravel-authentication-log",
     "license": "MIT",
     "authors": [
         {
@@ -29,13 +29,13 @@
     },
     "autoload": {
         "psr-4": {
-            "Rappasoft\\LaravelAuthenticationLog\\": "src",
-            "Rappasoft\\LaravelAuthenticationLog\\Database\\Factories\\": "database/factories"
+            "AuroraWebSoftware\\LaravelAuthenticationLog\\": "src",
+            "AuroraWebSoftware\\LaravelAuthenticationLog\\Database\\Factories\\": "database/factories"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Rappasoft\\LaravelAuthenticationLog\\Tests\\": "tests"
+            "AuroraWebSoftware\\LaravelAuthenticationLog\\Tests\\": "tests"
         }
     },
     "scripts": {
@@ -51,7 +51,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Rappasoft\\LaravelAuthenticationLog\\LaravelAuthenticationLogServiceProvider"
+                "AuroraWebSoftware\\LaravelAuthenticationLog\\LaravelAuthenticationLogServiceProvider"
             ]
         }
     },

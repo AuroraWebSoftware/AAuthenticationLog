@@ -1,11 +1,11 @@
 <?php
 
-namespace Rappasoft\LaravelAuthenticationLog\Listeners;
+namespace AuroraWebSoftware\LaravelAuthenticationLog\Listeners;
 
 use Illuminate\Auth\Events\OtherDeviceLogout;
 use Illuminate\Http\Request;
-use Rappasoft\LaravelAuthenticationLog\Models\AuthenticationLog;
-use Rappasoft\LaravelAuthenticationLog\Traits\AuthenticationLoggable;
+use AuroraWebSoftware\LaravelAuthenticationLog\Models\AuthenticationLog;
+use AuroraWebSoftware\LaravelAuthenticationLog\Traits\AuthenticationLoggable;
 
 class OtherDeviceLogoutListener
 {

@@ -1,9 +1,9 @@
 <?php
 
-namespace Rappasoft\LaravelAuthenticationLog\Commands;
+namespace AuroraWebSoftware\LaravelAuthenticationLog\Commands;
 
 use Illuminate\Console\Command;
-use Rappasoft\LaravelAuthenticationLog\Models\AuthenticationLog;
+use AuroraWebSoftware\LaravelAuthenticationLog\Models\AuthenticationLog;
 
 class PurgeAuthenticationLogCommand extends Command
 {

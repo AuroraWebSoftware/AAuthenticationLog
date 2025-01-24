@@ -21,7 +21,7 @@ See the [documentation](https://rappasoft.com/docs/laravel-authentication-log) f
 ## Installation
 
 ```bash
-composer require rappasoft/laravel-authentication-log
+composer require aurorawebsoftware/laravel-authentication-log
 ```
 
 ## Testing
