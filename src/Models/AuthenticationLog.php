@@ -25,6 +25,7 @@ class AuthenticationLog extends Model
 
     protected $fillable = [
         'ip_address',
+        'server_ip_address',
         'user_agent',
         'login_at',
         'login_successful',

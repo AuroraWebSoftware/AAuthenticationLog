@@ -35,8 +35,11 @@ class FailedLoginListener
                 $ip = $this->request->ip();
             }
 
+            $serverIp = $this->request->server('SERVER_ADDR') ?? gethostbyname(gethostname());
+
             $log = $event->user->authentications()->create([
                 'ip_address' => $ip,
+                'server_ip_address' => $serverIp,
                 'user_agent' => $this->request->userAgent(),
                 'login_at' => now(),
                 'login_successful' => false,

@@ -36,9 +36,20 @@ trait AuthenticationLoggable
         return $this->authentications()->first()?->ip_address;
     }
 
+    public function lastLoginServerIp()
+    {
+        return $this->authentications()->first()?->server_ip_address;
+    }
+
+
     public function lastSuccessfulLoginIp()
     {
         return $this->authentications()->whereLoginSuccessful(true)->first()?->ip_address;
+    }
+
+    public function lastSuccessfulLoginServerIp()
+    {
+        return $this->authentications()->whereLoginSuccessful(true)->first()?->server_ip_address;
     }
 
     public function previousLoginAt()
@@ -49,5 +60,10 @@ trait AuthenticationLoggable
     public function previousLoginIp()
     {
         return $this->authentications()->skip(1)->first()?->ip_address;
+    }
+
+    public function previousLoginServerIp()
+    {
+        return $this->authentications()->skip(1)->first()?->server_ip_address;
     }
 }

@@ -24,6 +24,7 @@ class LaravelAuthenticationLogServiceProvider extends PackageServiceProvider
             ->hasConfigFile()
             ->hasTranslations()
             ->hasViews()
+            ->hasMigrations(['add_new_column_authentication_log_table'])
             ->hasMigration('create_authentication_log_table')
             ->hasCommand(PurgeAuthenticationLogCommand::class);
 

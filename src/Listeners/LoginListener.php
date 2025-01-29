@@ -36,6 +36,8 @@ class LoginListener
                 $ip = $this->request->ip();
             }
 
+            $serverIp = $this->request->server('SERVER_ADDR') ?? gethostbyname(gethostname());
+
             $user = $event->user;
             $userAgent = $this->request->userAgent();
             $known = $user->authentications()->whereIpAddress($ip)->whereUserAgent($userAgent)->whereLoginSuccessful(true)->first();
@@ -43,6 +45,7 @@ class LoginListener
 
             $log = $user->authentications()->create([
                 'ip_address' => $ip,
+                'server_ip_address' => $serverIp,
                 'user_agent' => $userAgent,
                 'login_at' => now(),
                 'login_successful' => true,
